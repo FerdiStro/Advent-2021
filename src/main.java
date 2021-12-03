@@ -1,5 +1,6 @@
 import FirstDezember.firstDezemberSolution;
 import SecondDezember.secondDezemberSolution;
+import thirdDezemberSolution.thirdDezemberSolution;
 
 public class main {
     public static void main(String[] args) {
@@ -10,6 +11,9 @@ public class main {
         //2. Dezember
         secondDezemberSolution secentSolution = new secondDezemberSolution();
         secentSolution.Solution();
+        //3. Dezember
+        thirdDezemberSolution thirdDezemberSolution = new thirdDezemberSolution();
+
 
     }
 }
