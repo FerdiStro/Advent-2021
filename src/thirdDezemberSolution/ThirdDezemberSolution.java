@@ -2,12 +2,9 @@ package thirdDezemberSolution;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
-public class thirdDezemberSolution {
+public class ThirdDezemberSolution {
 
     private List<String> Scann(){
         List<String> byteList = new ArrayList<>();
@@ -67,9 +64,8 @@ public class thirdDezemberSolution {
             }
         }
 
-        //Part 1
-        String Oxygen = getOxygen(byteList, split, map);
         //Part 2
+        String Oxygen = getOxygen(byteList, split, map);
         String CO2 = getCO2(byteList,split, map1);
         System.out.println("The Solution is/ Part 1: GAMMA: " + Answer +"  EPSILON: " + Answer2 + " Part 2:  OXYGEN: " + Oxygen + "  CO2: " +CO2   );
     }
@@ -178,19 +174,16 @@ public class thirdDezemberSolution {
 
         }
         String Oxygen = "" ;
-        for(int i = 0 ; i != 1000  ; i ++ ){
-            try {
-                for (String s : map.get(i)) {
-                    Oxygen = Oxygen+s;
-                }
-            }catch (Exception e){
-            }
+        Set<Integer> integers = map.keySet();
+        Integer o = (Integer) integers.toArray()[0];
+        for (String s : map.get(o)) {
+            Oxygen = Oxygen+s;
         }
         return Oxygen;
     }
 
 
-    public thirdDezemberSolution(){
+    public void Solution(){
         List<String> scann = Scann();
         calculate(scann);
     }

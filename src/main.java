@@ -1,6 +1,7 @@
 import FirstDezember.firstDezemberSolution;
 import SecondDezember.secondDezemberSolution;
-import thirdDezemberSolution.thirdDezemberSolution;
+import SixthDezember.SixthDezemberSolution;
+import thirdDezemberSolution.ThirdDezemberSolution;
 
 public class main {
     public static void main(String[] args) {
@@ -12,7 +13,15 @@ public class main {
         secondDezemberSolution secentSolution = new secondDezemberSolution();
         secentSolution.Solution();
         //3. Dezember
-        thirdDezemberSolution thirdDezemberSolution = new thirdDezemberSolution();
+        ThirdDezemberSolution thirdDezemberSolution = new ThirdDezemberSolution();
+        thirdDezemberSolution.Solution();
+        //4. Dezember
+        //
+        //5. Dezember
+        //
+        //6.Dezember
+        SixthDezemberSolution sixthDezemberSolution = new SixthDezemberSolution();
+        sixthDezemberSolution.Solution();
 
 
     }
