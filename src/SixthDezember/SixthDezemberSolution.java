@@ -10,10 +10,8 @@ public class SixthDezemberSolution {
     public void Solution(){
         List<Integer> scann = Scann();
         calculate(scann, 80);
-
     }
     private void calculate(List<Integer> dataList, int countDays){
-//        List<Integer> dataListPartTwo = dataList;
         //Part 1
         for(int d = 0 ; d !=  countDays;  d++) {
             for (int i = 0; i != dataList.size(); i++) {
@@ -26,33 +24,8 @@ public class SixthDezemberSolution {
             }
         }
         int partOne = dataList.size();
-        System.out.println("The Solution is/ Part 1: " + partOne + " Part 2: " );
+        System.out.println("The Solution is/ Part 1: " + partOne + " Part 2: IN PyThonFile " );
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     private List<Integer> Scann()  {
         Scanner scanner = null;
         try {
