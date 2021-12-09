@@ -1,5 +1,6 @@
 import EighthDezember.EighthDezemberSolution;
 import FirstDezember.firstDezemberSolution;
+import NinthDezember.NinthDezemberSolution;
 import SecondDezember.secondDezemberSolution;
 import SeventhDezemberSolution.SeventhDezemberSolution;
 import SixthDezember.SixthDezemberSolution;
@@ -30,6 +31,9 @@ public class main {
         //8. Dezember
         EighthDezemberSolution eighthDezemberSolution = new EighthDezemberSolution();
         eighthDezemberSolution.Solution();
+        //9. Dezember
+        NinthDezemberSolution ninthDezemberSolution = new NinthDezemberSolution();
+        ninthDezemberSolution.Solution();
 
 
 
