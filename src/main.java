@@ -1,15 +1,16 @@
+import EighthDezember.EightDezemberPart2;
 import EighthDezember.EighthDezemberSolution;
 import FirstDezember.firstDezemberSolution;
 import NinthDezember.NinthDezemberSolution;
 import SecondDezember.secondDezemberSolution;
 import SeventhDezemberSolution.SeventhDezemberSolution;
 import SixthDezember.SixthDezemberSolution;
+import TenthDezember.TenthDezemberSolution;
 import thirdDezemberSolution.ThirdDezemberSolution;
 
 public class main {
     public static void main(String[] args) {
         //1. Dezember
-
         firstDezemberSolution firstSolution = new firstDezemberSolution();
         firstSolution.Solution();
         //2. Dezember
@@ -35,7 +36,13 @@ public class main {
         NinthDezemberSolution ninthDezemberSolution = new NinthDezemberSolution();
         ninthDezemberSolution.Solution();
 
+        //Test
+        EightDezemberPart2 eighthDezemberPart2 = new EightDezemberPart2();
+        eighthDezemberPart2.Solution();
 
+        //10.Dezember
+        TenthDezemberSolution tenthDezemberSolution = new TenthDezemberSolution();
+        tenthDezemberSolution.Solution();
 
 
     }

@@ -52,77 +52,48 @@ public class NinthDezemberSolution {
         solveOne = solveOne + x;
     }
         Collections.sort(basins);
-        int solveTwo = basins.get(basins.size()-1)* basins.get(basins.size()-2)*basins.get(basins.size()-3);
+        int solveTwo = basins.get(basins.size()-1) * basins.get(basins.size()-2) * basins.get(basins.size()-3);
         System.out.println("The Solution is/ Part 1: " + solveOne + "  Part 2: "+solveTwo);
     }
 
     private Integer checkBasin(List<String[]> raws , int xKord , int yKord){
         int count = 0 ;
         int onePoint = Integer.parseInt(raws.get(xKord)[yKord]);
-        int overPoint = -1;
-        int underPoint = -1;
-        int rightPoint = -1;
-        int lefPoint = -1;
+        int overPoint = -10;
+        int underPoint = -10;
+        int rightPoint = -10;
+        int lefPoint = -10;
         if(xKord > 0){overPoint = Integer.parseInt(raws.get(xKord-1)[yKord]);}
         if(xKord <= raws.size()-2){underPoint = Integer.parseInt(raws.get(xKord+1)[yKord]);}
         if(yKord < raws.get(xKord).length-1){rightPoint = Integer.parseInt(raws.get(xKord)[yKord+1]);}
         if(yKord > 0){lefPoint = Integer.parseInt(raws.get(xKord)[yKord-1]);}
-
         if(overPoint == onePoint+1 && overPoint !=9){
-            try {
-                if(map[xKord-1][yKord] != -1) {
-                    map[xKord-1][yKord] = -1;
-                    Integer integer = checkBasin(raws, xKord - 1, yKord);
-                    count = count + integer + 1;
-                }
-            }catch (Exception e){
+            if(map[xKord-1][yKord] == null){
                 map[xKord-1][yKord] = -1;
                 Integer integer = checkBasin(raws, xKord - 1, yKord);
                 count = count + integer + 1;
             }
         }
         if(underPoint == onePoint+1 && underPoint != 9 ){
-            try {
-                if(map[xKord+1][yKord] != -1) {
-                    map[xKord+1][yKord] = -1;
-                    Integer integer = checkBasin(raws, xKord + 1, yKord);
-                    count = count + integer + 1;
-                }
-            }catch (Exception e){
+            if(map[xKord+1][yKord] == null) {
                 map[xKord+1][yKord] = -1;
                 Integer integer = checkBasin(raws, xKord + 1, yKord);
                 count = count + integer + 1;
             }
-
         }
           if(rightPoint == onePoint+1 && rightPoint != 9){
-            try {
-                if(  map[xKord][yKord+1] != -1) {
-
-                    map[xKord][yKord+1] = -1;
-                    Integer integer = checkBasin(raws, xKord, yKord + 1);
-                    count = count + integer + 1;
+              if(  map[xKord][yKord+1] == null) {
+                  map[xKord][yKord+1] = -1;
+                  Integer integer = checkBasin(raws, xKord, yKord + 1);
+                  count = count + integer + 1;
                 }
-            }catch (Exception e) {
-                map[xKord][yKord+1] = -1;
-                Integer integer = checkBasin(raws, xKord, yKord + 1);
-                count = count + integer + 1;
-            }
         }
         if (lefPoint == onePoint + 1 && lefPoint != 9 ) {
-            try {
-                if( map[xKord][yKord-1] != -1) {
-                    map[xKord][yKord-1] = -1;
-                    Integer integer = checkBasin(raws, xKord, yKord - 1);
-                    count = count + integer + 1;
-                }
-            }catch (Exception e ){
+            if( map[xKord][yKord-1] == null) {
                 map[xKord][yKord-1] = -1;
                 Integer integer = checkBasin(raws, xKord, yKord - 1);
                 count = count + integer + 1;
             }
-
-
         }
         return  count;
     }
