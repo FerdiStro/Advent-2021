@@ -1,4 +1,4 @@
-package SixthDezember;
+package Solutions.SixthDezember;
 
 import java.io.File;
 import java.io.FileNotFoundException;

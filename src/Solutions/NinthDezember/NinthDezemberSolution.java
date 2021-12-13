@@ -1,4 +1,4 @@
-package NinthDezember;
+package Solutions.NinthDezember;
 
 import java.io.File;
 import java.io.FileNotFoundException;

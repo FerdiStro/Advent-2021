@@ -1,12 +1,13 @@
-import EighthDezember.EightDezemberPart2;
-import EighthDezember.EighthDezemberSolution;
-import FirstDezember.firstDezemberSolution;
-import NinthDezember.NinthDezemberSolution;
-import SecondDezember.secondDezemberSolution;
-import SeventhDezemberSolution.SeventhDezemberSolution;
-import SixthDezember.SixthDezemberSolution;
-import TenthDezember.TenthDezemberSolution;
-import thirdDezemberSolution.ThirdDezemberSolution;
+import Solutions.EighthDezember.EightDezemberPart2;
+import Solutions.EighthDezember.EighthDezemberSolution;
+import Solutions.FirstDezember.firstDezemberSolution;
+import Solutions.NinthDezember.NinthDezemberSolution;
+import Solutions.SecondDezember.secondDezemberSolution;
+import Solutions.SeventhDezember.SeventhDezemberSolution;
+import Solutions.SixthDezember.SixthDezemberSolution;
+import Solutions.TenthDezember.TenthDezemberSolution;
+import Solutions.ThirteenthDezember.TirteenthDezemberSolution;
+import Solutions.thirdDezember.ThirdDezemberSolution;
 
 public class main {
     public static void main(String[] args) {
@@ -43,6 +44,10 @@ public class main {
         //10.Dezember
         TenthDezemberSolution tenthDezemberSolution = new TenthDezemberSolution();
         tenthDezemberSolution.Solution();
+
+        //13. Dezember
+        TirteenthDezemberSolution thirteenthDezemberSolution = new TirteenthDezemberSolution();
+        thirteenthDezemberSolution.Solution();
 
 
     }

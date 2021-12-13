@@ -1,4 +1,4 @@
-package thirdDezemberSolution;
+package Solutions.thirdDezember;
 
 import java.io.File;
 import java.io.FileNotFoundException;

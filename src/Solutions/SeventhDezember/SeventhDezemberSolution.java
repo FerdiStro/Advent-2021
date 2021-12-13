@@ -1,8 +1,7 @@
-package SeventhDezemberSolution;
+package Solutions.SeventhDezember;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
-import java.util.stream.Stream;
 
 public class SeventhDezemberSolution {
 

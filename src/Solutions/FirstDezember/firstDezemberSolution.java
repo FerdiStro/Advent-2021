@@ -1,4 +1,4 @@
-package FirstDezember;
+package Solutions.FirstDezember;
 
 import java.io.File;
 import java.util.ArrayList;
