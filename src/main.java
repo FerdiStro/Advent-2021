@@ -1,6 +1,8 @@
 import Solutions.EighthDezember.EightDezemberPart2;
 import Solutions.EighthDezember.EighthDezemberSolution;
 import Solutions.FirstDezember.firstDezemberSolution;
+import Solutions.FourteentDezember.Day14;
+import Solutions.FourteentDezember.FourteenthDezemberSolution;
 import Solutions.NinthDezember.NinthDezemberSolution;
 import Solutions.SecondDezember.secondDezemberSolution;
 import Solutions.SeventhDezember.SeventhDezemberSolution;
@@ -48,6 +50,12 @@ public class main {
         //13. Dezember
         TirteenthDezemberSolution thirteenthDezemberSolution = new TirteenthDezemberSolution();
         thirteenthDezemberSolution.Solution();
+
+        //14. Dezember
+        FourteenthDezemberSolution fourteenthDezemberSolution = new FourteenthDezemberSolution();
+        fourteenthDezemberSolution.Solution();
+
+
 
 
     }

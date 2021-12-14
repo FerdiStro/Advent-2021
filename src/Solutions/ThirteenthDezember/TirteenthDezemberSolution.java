@@ -78,6 +78,8 @@ public class TirteenthDezemberSolution  extends Scann {
             for(int j = 0 ; j != list.get(list.size()-1) ; j++){
                 if(list.contains(j)){
                     System.out.print("X");
+                }else if( j  == list.get(list.size()-1)-1 && list.contains(list.get(list.size()-1))){
+                    System.out.print("X");
                 }else{
                     System.out.print("-");
                 }
@@ -119,13 +121,6 @@ public class TirteenthDezemberSolution  extends Scann {
         }
 
         }
-
-
-
-
-
-
-
 
 
 
