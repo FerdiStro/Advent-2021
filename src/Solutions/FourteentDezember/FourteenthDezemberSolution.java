@@ -37,10 +37,7 @@ public class FourteenthDezemberSolution extends Scann {
         }
         selfReflection();
         Day14 day14 = new Day14();
-        int partTwo = Integer.parseInt(day14.Solution());
-        partTwo = partTwo -1;
-
-
+        String partTwo = day14.Solution();
         Integer partOne = solvOne(alphas);
         System.out.println("The Solution is/ Part 1: " + partOne + " Part 2:  "   + partTwo);
     }
