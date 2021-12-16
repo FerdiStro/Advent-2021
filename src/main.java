@@ -2,11 +2,11 @@ import Solutions.EighthDezember.EightDezemberPart2;
 import Solutions.EighthDezember.EighthDezemberSolution;
 import Solutions.FifteenDezember.FifteenDezemberSolution;
 import Solutions.FirstDezember.firstDezemberSolution;
-import Solutions.FourteentDezember.Day14;
 import Solutions.FourteentDezember.FourteenthDezemberSolution;
 import Solutions.NinthDezember.NinthDezemberSolution;
 import Solutions.SecondDezember.secondDezemberSolution;
 import Solutions.SeventhDezember.SeventhDezemberSolution;
+import Solutions.SixteenthDezember.SixteethDezemberSolution;
 import Solutions.SixthDezember.SixthDezemberSolution;
 import Solutions.TenthDezember.TenthDezemberSolution;
 import Solutions.ThirteenthDezember.TirteenthDezemberSolution;
@@ -59,6 +59,10 @@ public class main {
         //15. Dezember
         FifteenDezemberSolution fifteenDezemberSolution = new FifteenDezemberSolution();
         fifteenDezemberSolution.Solution();
+
+        //16. Dezember
+        SixteethDezemberSolution sixteethDezemberSolution = new SixteethDezemberSolution();
+        sixteethDezemberSolution.Solution();
 
 
 
