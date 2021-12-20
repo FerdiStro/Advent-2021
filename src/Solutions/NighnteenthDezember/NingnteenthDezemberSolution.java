@@ -8,13 +8,15 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 public class NingnteenthDezemberSolution {
+        int partOne;
+        int partTwo;
 
         public void Solution() {
         var patH = Pattern.compile("--- scanner (\\d+) ---");
         var patL = Pattern.compile("(-?\\d+),(-?\\d+),(-?\\d+)");
             List<String> inp = null;
             try {
-                inp = Files.lines(Paths.get("input.txt")).toList();
+                inp = Files.lines(Paths.get("rsc/input19Dezember.txt")).toList();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -28,7 +30,7 @@ public class NingnteenthDezemberSolution {
             if (m.find())
                 scanners.getLast().add(new Beacon(Integer.parseInt(m.group(1)), Integer.parseInt(m.group(2)), Integer.parseInt(m.group(3))));
         }
-        System.out.println(scanners.size());
+//        System.out.println(scanners.size());
         var scannerSet = new HashSet<Beacon>();
         scannerSet.add(new Beacon(0,0,0));
         var nullSet = scanners.pop();
@@ -63,13 +65,16 @@ public class NingnteenthDezemberSolution {
             scanners.add(ns);
         }
         var max = 0;
-        System.out.println(nullSet.size());
+//        System.out.println(nullSet.size());
+            partOne = nullSet.size();
         for (Beacon b1 : scannerSet) {
             for (Beacon b2 : scannerSet) {
                 max = Math.max(max, b1.distance(b2));
             }
         }
-        System.out.println(max);
+//        System.out.println(max);
+        partTwo = max;
+        System.out.println("The Solution is/ Part 1: " + partOne + " Part 2: " + partTwo);
     }
 
     record Beacon(int x, int y, int z) {
