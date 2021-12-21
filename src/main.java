@@ -1,3 +1,6 @@
+import Solutions.TwentiethDezember.TwentiethDezemberSolution;
+import Solutions.TwentyFirstDezember.TwentyFirstDezemberSolution;
+
 public class main {
     public static void main(String[] args) {
 //        //1. Dezember
@@ -47,8 +50,8 @@ public class main {
 //        //11. Dezember
 //        ElvenetDezemberSolution elvenetDezemberSolution = new ElvenetDezemberSolution();
 //        elvenetDezemberSolution.Solution();
-
-
+//
+//
 //        //12. Dezember
 //        TwelvedDezemberSolution twelvedDezemberSolution = new TwelvedDezemberSolution();
 //        twelvedDezemberSolution.Solution();
@@ -80,6 +83,13 @@ public class main {
 //        NingnteenthDezemberSolution ningnteenthDezemberSolution = new NingnteenthDezemberSolution();
 //        ningnteenthDezemberSolution.Solution();
 //
+//        //20. Dezember
+//
+        TwentiethDezemberSolution twentiethDezemberSolution = new TwentiethDezemberSolution();
+        twentiethDezemberSolution.Solution();
+
+        TwentyFirstDezemberSolution twentyFirstDezemberSolution = new TwentyFirstDezemberSolution();
+        twentyFirstDezemberSolution.Solution();
 
 
 
