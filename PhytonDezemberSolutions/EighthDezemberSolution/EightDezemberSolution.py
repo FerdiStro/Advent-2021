@@ -1,5 +1,5 @@
 
-ex = open("example.txt", "r").read()
+
 f = open("in.txt", "r").read()
 
 
@@ -99,22 +99,11 @@ def solve(s):
 
     for i in a:
         cv = proc(i)
-        # print("",cv)
+
         ans += cv
 
     return ans
 
-# unval = [2, 3, 7, 4]
-
-# for i in a:
-
-# 	j = i[1].split(" ")
-# 	for k in j:
-# 		if len(k) in unval:
-# 			ans += 1
-
-# return ans
 
 
-print(solve(ex))
 print(solve(f))

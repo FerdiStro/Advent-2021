@@ -1,4 +1,4 @@
-import Solutions.TwentysecentDezember.TwentysecentDezemberSolution;
+import Solutions.TwentyThirdDezember.TwentyThirdDezemberSolution;
 
 public class main {
     public static void main(String[] args) {
@@ -90,14 +90,14 @@ public class main {
 //        //21. Dezember
 //        TwentyFirstDezemberSolution twentyFirstDezemberSolution = new TwentyFirstDezemberSolution();
 //        twentyFirstDezemberSolution.Solution();
+//
+//        //22. Dezember
+//        TwentysecentDezemberSolution twentysecentDezemberSolution = new TwentysecentDezemberSolution();
+//        twentysecentDezemberSolution.Solution();
 
-        //22. Dezember
-        TwentysecentDezemberSolution twentysecentDezemberSolution = new TwentysecentDezemberSolution();
-        twentysecentDezemberSolution.Solution();
-
-
-
-
+        //23. Dezember
+        TwentyThirdDezemberSolution twentyThirdDezemberSolution = new TwentyThirdDezemberSolution();
+        twentyThirdDezemberSolution.Solution();
 
 
     }
