@@ -1,2 +1,2 @@
-# Advend-2021
+# Advent-2021
 All Solutions for https://adventofcode.com/2021
